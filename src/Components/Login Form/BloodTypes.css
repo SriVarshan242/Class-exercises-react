@@ -1,0 +1,102 @@
+/* BloodTypes.css */
+
+.blood-group-container {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #999;
+}
+
+.blood-group-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.blood-group-button {
+  background-color: #457b9d;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blood-group-button:hover {
+  background-color: #1d3557;
+  transform: translateY(-3px);
+}
+
+.donor-details-container {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.selected-group {
+  font-size: 1.8rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.donor-count {
+  font-size: 1.4rem;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.donor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donor-card {
+  background-color: #f1faee;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.donor-card:hover {
+  transform: scale(1.05);
+}
+
+.donor-card h3 {
+  font-size: 1.6rem;
+  color: #457b9d;
+  margin-bottom: 8px;
+}
+
+.donor-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.no-donors {
+  font-size: 1.3rem;
+  color: #e76f51;
+  margin-top: 15px;
+}
